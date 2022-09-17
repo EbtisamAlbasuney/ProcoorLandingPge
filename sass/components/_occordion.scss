@@ -1,0 +1,20 @@
+.occordion{
+    border: none;
+}
+.accordion-item{
+    width: 50%;
+    margin-left: 20%;
+    background-color: $sectionTwoColor;
+    color: $btn-contact-color;
+    text-decoration: none;
+    border-bottom: 0.2px solid $btn-contact-color;
+    .accordion-button{
+        background-color: $sectionTwoColor;
+        border:none;
+        color: $occordion-btn-text;
+        font-weight: bold;
+        text-decoration: none;
+    }
+   
+}
+

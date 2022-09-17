@@ -1,0 +1,53 @@
+.sectionOne {
+// height: 500px;
+width:100%;
+background-image: url("/images/one.png")  ;
+background-repeat: repeat-x;
+.insectionOne{
+ background-image: $dark-blue;
+ height: auto;
+ padding-bottom: 35px;
+}
+p{
+text-align: center;    
+color: $p-one;
+    margin-top:100px;
+}
+.par{
+    color: $p2-color;
+    text-align: center;
+    width: 41%;
+    margin: auto;
+    clear: both;
+    @include small-screen {
+        width: 55%;
+     
+         // responsive code for mobile viewport i.e. 480px   
+     }
+}
+}
+%message-shared {
+    text-align: center;
+    font-weight: bold;
+font-size: 85px;
+line-height: 100px;
+vertical-align: top;
+letter-spacing: -2px;
+@include small-screen {
+    font-size: 40px;
+    line-height: 50px;
+
+    // responsive code for mobile viewport i.e. 480px   
+}
+  }
+h1 span{
+    @extend %message-shared;
+    color: $span-color;
+    border-bottom: 2px solid $underline-color;
+}
+h1{
+    @extend %message-shared;
+    color: $h1-color;
+}
+
+

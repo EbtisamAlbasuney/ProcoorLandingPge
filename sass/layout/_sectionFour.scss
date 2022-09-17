@@ -1,0 +1,227 @@
+.sectionFour{
+    background-image: $div-four-color;
+    height: 1000px;
+    width: 100%;
+    @include small-screen {
+        height: 1800px;
+         // responsive code for mobile viewport i.e. 480px   
+     }
+    .div-four{
+        margin-top: 70px;
+    }
+    .img-path{
+        margin-left:10%;
+        width:47px;
+        height: 47px;
+        margin-top: 20px;
+    }
+    h1{
+        @extend %message-shared;
+        color:$span-color;
+        font-size: 60px;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: -30px;
+        @include small-screen {
+            font-size: 30px;
+            margin-top: 30px;
+             // responsive code for mobile viewport i.e. 480px   
+         }
+    }
+    .img-path-2{
+        margin-top: 40px;
+        margin-left: -30px;
+    }
+    .par-four{
+        color: #fff;
+        width: 30%;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 10%;
+        @include small-screen {
+            font-size: 20px;
+            width: 60%;
+             // responsive code for mobile viewport i.e. 480px   
+         }
+    }
+}
+.div-icon{
+    margin-top: 100px;
+    img{
+        width: 80px;
+        margin-left: 10px;
+    }
+    h2{
+        color: #fff;
+        font-weight: bold;
+    }
+    p{
+        color:$p-one;
+    }
+
+}
+.div-video{
+    background-image: $div-four-color;
+    position: relative;
+    .dot-1{
+        z-index:1;
+        position: absolute;
+        top: 10px;
+        left: 70%;
+        @include small-screen {
+            left: 80%; 
+         }
+    }
+   
+     .video-imgs{
+        background-color: #fff;
+        width: 400px;
+        height: 250px;
+        border-radius: 10px;
+        margin-left: 110px;
+        margin-top: 40px;
+        position: absolute;
+        z-index: 3;
+        @include small-screen {
+            margin-left: 30px; 
+         }
+         .img-person{
+             width: 150px;
+             height: 85px;
+             border-radius:10px;
+             margin-left: 50px;
+             margin-top: 50px;
+         }
+         .img-person-2{
+             @extend .img-person;
+             margin-top: 5px;
+             margin-left: 5px;
+         }
+    }
+
+    .dot-2{
+        z-index:1;
+        position: absolute;
+        top: 160px;
+        left: 80px;
+        @include small-screen {
+            left: 0px; 
+         }
+    }
+}
+.div-you{
+    @include div;
+    background-color: $you-color;
+    p{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    }
+    
+}
+.div-hg{
+    @include div;
+    background-color: $hg-color;
+    .circle-zoom-1{
+        @include circle-zoom;
+        background-color: $hg-circle-color;
+        p{
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            position: relative;
+            top: 15px;
+            
+        }
+    }
+  
+   
+}
+.div-br{
+    @include div;
+    background-color: $br-color;
+    margin-top: 5px;
+    margin-left: 50px;
+    .circle-zoom-2{
+        @include circle-zoom;
+        background-color: $br-circle-color;
+        p{
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            position: relative;
+            top: 15px;
+            
+        }
+    }
+}
+.div-md{
+    @include div;
+    background-color: $md-color;
+    margin-top: 5px;
+     
+    .circle-zoom-3{
+        @include circle-zoom;
+        background-color: $md-circle-color;
+        p{
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            position: relative;
+            top: 15px;
+            
+        }
+    }
+}
+.par-circle{
+    font-size: 8px;
+    color: #fff;
+    margin: 5px;
+    text-align: center;
+    
+}
+.second-container{
+    @include small-screen {
+        position: relative;
+        top: 300px;
+     }
+   
+}
+
+.zoom-1{
+    @include zoom;
+    background-color: $md-circle-color;
+}
+.zoom-2{
+    @include zoom;
+    background-color: $br-circle-color;
+}
+.zoom-3{
+    @include zoom;
+    background-color: $you-color;
+}
+.div-zoom-2{
+    background-color: $div-zoom-2;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5px;
+}
+.last-text{
+    color: $last-text;
+    position: relative;
+    left: 10px;
+    top: 20px;
+    font-weight: bold;
+
+}
+.line{
+    position: relative;
+    top: 5px;
+    left: 50px;
+}

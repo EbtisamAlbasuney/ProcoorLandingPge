@@ -1,0 +1,37 @@
+.sectionThree{
+    background-image: url("/images/overlay\ \(1\).svg");
+}
+.img-circle{
+    margin: 20px;
+}
+.par-workflow{
+    color:$btn-start-color;
+    font-size: 18px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.h-three{
+    @extend %message-shared;
+    color: #000;
+    font-size: 50px;
+    text-align: left;
+}
+.par-three{
+    color: $p2-color;
+    width: 70%;
+}
+.image-network{
+  margin-top: 30px;
+    @include small-screen {
+        height: 400px ;
+     
+         // responsive code for mobile viewport i.e. 480px   
+     }
+}
+
+// .overlay-network{
+//     background-image: url('images/overlay (1).svg') no-repeat;
+//     background-size: contain;
+// }

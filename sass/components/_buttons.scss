@@ -1,0 +1,29 @@
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    border: transparent;
+}
+.start-btn{
+    @extend .btn;
+    background-color: $btn-start-color;  
+    @include small-screen {
+        margin-bottom: 5px
+     
+         // responsive code for mobile viewport i.e. 480px   
+     }  
+}
+.contact-btn{
+    @extend .btn;
+    background-color: $btn-contact-color;
+}
+.pay-btn{
+    @include btns;
+    background-color: $btn-three;
+}
+.material-btn{
+    @include btns;
+    background-color: $btn-material;
+}

@@ -1,0 +1,59 @@
+.sectionTwo{
+    background-color: $sectionTwoColor;
+    height: 800px ;
+    padding-bottom: 20px;
+    @include small-screen {
+        height: 1700px ;
+     
+         // responsive code for mobile viewport i.e. 480px   
+     }
+    p{
+        color: $h1-color;
+        font-size: 45px;
+        font-weight: bold;
+        width: 70%;
+        margin-left:20%;
+        margin-top: 50px;
+    }
+    .progress{
+        width: 50%;
+        height: 3px;
+        margin: 20px  20%;
+        background-color: $progress;
+        opacity: 0.5;
+        .inProgress{
+            width: 30%;
+            height: 3px !important;
+            background-color:$inprogress;
+            border-radius: 5px;
+            opacity: 1;
+        }
+       
+    }
+   
+   
+
+}
+.img-div{
+    position: relative;
+    .one{
+        width: 30%;
+        position: absolute;
+        top: 30px;
+        left: 70%;
+        z-index: 1;
+    }
+    .two{
+        position: absolute;
+        top: 10px;
+        z-index: 2;
+    }
+    .three{
+        position: absolute;
+        top: 460px;
+        left: 100px;
+        z-index:1;
+    }
+}
+
+
